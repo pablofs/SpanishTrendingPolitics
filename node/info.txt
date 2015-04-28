@@ -1,0 +1,489 @@
+-------------------------------------------------------------------------------
+TRANSFORM HTML TO JADE ONLINE
+http://html2jade.org/
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+INSTALACION DE NODE.JS, EXPRESS, ...
+-------------------------------------------------------------------------------
+
+https://nodejs.org/
+
+--> Install:  
+node-v0.12.2-x64.msi
+
+Open Node.js commans prompt
+--> Install:  
+npm install -g express
+
+--> Install:
+npm install -g express-generator
+
+--> Create my first express project:
+express 001_node_test
+
+--> Add dependencies:
+	--> Open file: 001_node_test/package.json
+	-----------------------------------------
+	{
+	  "name": "001_node_test",
+	  "version": "0.0.0",
+	  "private": true,
+	  "scripts": {
+		"start": "node ./bin/www"
+	  },
+	  "dependencies": {
+		"body-parser": "~1.12.0",
+		"cookie-parser": "~1.3.4",
+		"debug": "~2.1.1",
+		"express": "~4.12.2",
+		"jade": "~1.9.2",
+		"morgan": "~1.5.1",
+		"serve-favicon": "~2.2.0"
+	  }
+	}
+	-----------------------------------------
+
+	And we add these dependencies:
+		"mongodb": "*",
+		"monk": "*"
+		
+	-----------------------------------------		
+	{
+	  "name": "001_node_test",
+	  "version": "0.0.0",
+	  "private": true,
+	  "scripts": {
+		"start": "node ./bin/www"
+	  },
+	  "dependencies": {
+		"body-parser": "~1.12.0",
+		"cookie-parser": "~1.3.4",
+		"debug": "~2.1.1",
+		"express": "~4.12.2",
+		"jade": "~1.9.2",
+		"morgan": "~1.5.1",
+		"serve-favicon": "~2.2.0",
+		"mongodb": "*",
+		"monk": "*"
+	  }
+	}
+	-----------------------------------------
+	
+--> Install dependencies:
+
+001_node_test/npm install
+
+-->
+001_node_test/mkdir data
+
+--> Starts server:
+001_node_test/npm start
+
+--> Open: 001_node_test/app.js
+--> Add this lines:
+
+app.use('/', routes);
+app.use('/users', users);
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+INSTALL:
+-------------------------------------------------------------------------------
+
+ Directorio de C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node
+
+26/04/2015  13:26    <DIR>          .
+26/04/2015  13:26    <DIR>          ..
+               0 archivos              0 bytes
+               2 dirs  874.356.355.072 bytes libres
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node>npm install -g exp
+ress
+express@4.12.3 C:\Users\pablo_000\AppData\Roaming\npm\node_modules\express
+├── merge-descriptors@1.0.0
+├── fresh@0.2.4
+├── methods@1.1.1
+├── cookie@0.1.2
+├── utils-merge@1.0.0
+├── cookie-signature@1.0.6
+├── range-parser@1.0.2
+├── vary@1.0.0
+├── escape-html@1.0.1
+├── finalhandler@0.3.4
+├── content-type@1.0.1
+├── parseurl@1.3.0
+├── serve-static@1.9.2
+├── content-disposition@0.5.0
+├── path-to-regexp@0.1.3
+├── depd@1.0.1
+├── qs@2.4.1
+├── on-finished@2.2.1 (ee-first@1.1.0)
+├── debug@2.1.3 (ms@0.7.0)
+├── etag@1.5.1 (crc@3.2.1)
+├── send@0.12.2 (destroy@1.0.3, ms@0.7.0, mime@1.3.4)
+├── proxy-addr@1.0.7 (forwarded@0.1.0, ipaddr.js@0.1.9)
+├── accepts@1.2.5 (negotiator@0.5.1, mime-types@2.0.10)
+└── type-is@1.6.1 (media-typer@0.3.0, mime-types@2.0.10)
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: 90F2-4224
+
+ Directorio de C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node
+
+26/04/2015  13:26    <DIR>          .
+26/04/2015  13:26    <DIR>          ..
+               0 archivos              0 bytes
+               2 dirs  874.345.140.224 bytes libres
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node>npm install -g exp
+ress-generator
+C:\Users\pablo_000\AppData\Roaming\npm\express -> C:\Users\pablo_000\AppData\Roa
+ming\npm\node_modules\express-generator\bin\express
+express-generator@4.12.1 C:\Users\pablo_000\AppData\Roaming\npm\node_modules\exp
+ress-generator
+├── sorted-object@1.0.0
+├── commander@2.6.0
+└── mkdirp@0.5.0 (minimist@0.0.8)
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node>express 001_node_t
+est
+
+   create : 001_node_test
+   create : 001_node_test/package.json
+   create : 001_node_test/app.js
+   create : 001_node_test/public/images
+   create : 001_node_test/public
+   create : 001_node_test/routes
+   create : 001_node_test/routes/index.js
+   create : 001_node_test/routes/users.js
+   create : 001_node_test/public/stylesheets
+   create : 001_node_test/public/stylesheets/style.css
+   create : 001_node_test/views
+   create : 001_node_test/views/index.jade
+   create : 001_node_test/views/layout.jade
+   create : 001_node_test/views/error.jade
+   create : 001_node_test/bin
+   create : 001_node_test/bin/www
+
+   install dependencies:
+     $ cd 001_node_test && npm install
+
+   run the app:
+     $ DEBUG=001_node_test:* ./bin/www
+
+   create : 001_node_test/public/javascripts
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node>
+
+-------------------------------------------------------------------------------
+INSTALL DEPENDENCIES:
+-------------------------------------------------------------------------------
+
+npm WARN installMany semver was bundled with node-pre-gyp@0.6.4, but bundled pac
+kage wasn't found in unpacked tree
+npm WARN installMany tar was bundled with node-pre-gyp@0.6.4, but bundled packag
+e wasn't found in unpacked tree
+npm WARN installMany tar-pack was bundled with node-pre-gyp@0.6.4, but bundled p
+ackage wasn't found in unpacked tree
+npm WARN installMany mkdirp was bundled with node-pre-gyp@0.6.4, but bundled pac
+kage wasn't found in unpacked tree
+npm WARN installMany rc was bundled with node-pre-gyp@0.6.4, but bundled package
+ wasn't found in unpacked tree
+npm WARN installMany rimraf was bundled with node-pre-gyp@0.6.4, but bundled pac
+kage wasn't found in unpacked tree
+
+> kerberos@0.0.10 install C:\Users\pablo_000\Documents\P\Data Science\____Proyec
+to\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_module
+s\kerberos
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_node_test\node
+_modules\mongodb\node_modules\mongodb-core\node_modules\kerberos>if not defined
+npm_config_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp
+-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (rebuild)
+Los proyectos de esta solución se van a compilar de uno en uno. Para habilitar l
+a compilación en paralelo, agregue el modificador "/m".
+  kerberos.cc
+  worker.cc
+  security_buffer.cc
+  security_buffer_descriptor.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): wa
+rning C4530: Se ha utilizado el controlador de excepciones de C++, pero la semá
+ntica de desenredo no está habilitada. Especifique /EHsc (..\lib\win32\wrappers
+\security_buffer.cc) [C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\
+node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_modules\
+kerberos\build\kerberos.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): wa
+rning C4530: Se ha utilizado el controlador de excepciones de C++, pero la semá
+ntica de desenredo no está habilitada. Especifique /EHsc (..\lib\win32\wrappers
+\security_buffer_descriptor.cc) [C:\Users\pablo_000\Documents\P\Data Science\__
+__Proyecto\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\no
+de_modules\kerberos\build\kerberos.vcxproj]
+  security_context.cc
+  security_credentials.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): wa
+rning C4530: Se ha utilizado el controlador de excepciones de C++, pero la semá
+ntica de desenredo no está habilitada. Especifique /EHsc (..\lib\win32\wrappers
+\security_context.cc) [C:\Users\pablo_000\Documents\P\Data Science\____Proyecto
+\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_modules
+\kerberos\build\kerberos.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): wa
+rning C4530: Se ha utilizado el controlador de excepciones de C++, pero la semá
+ntica de desenredo no está habilitada. Especifique /EHsc (..\lib\win32\wrappers
+\security_credentials.cc) [C:\Users\pablo_000\Documents\P\Data Science\____Proy
+ecto\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_mod
+ules\kerberos\build\kerberos.vcxproj]
+  base64.c
+  kerberos_sspi.c
+     Creando biblioteca C:\Users\pablo_000\Documents\P\Data Science\____Proyect
+  o\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_modu
+  les\kerberos\build\Release\kerberos.lib y objeto C:\Users\pablo_000\Documents
+  \P\Data Science\____Proyecto\node\001_node_test\node_modules\mongodb\node_mod
+  ules\mongodb-core\node_modules\kerberos\build\Release\kerberos.exp
+  Generando c¾digo
+  Generaci¾n de c¾digo finalizada
+  kerberos.vcxproj -> C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\
+  node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_module
+  s\kerberos\build\Release\\kerberos.node
+
+> kerberos@0.0.9 install C:\Users\pablo_000\Documents\P\Data Science\____Proyect
+o\node\001_node_test\node_modules\monk\node_modules\mongodb\node_modules\kerbero
+s
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_node_test\node
+_modules\monk\node_modules\mongodb\node_modules\kerberos>if not defined npm_conf
+ig_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..
+\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (rebuild)
+Los proyectos de esta solución se van a compilar de uno en uno. Para habilitar l
+a compilación en paralelo, agregue el modificador "/m".
+  kerberos.cc
+  worker.cc
+  security_buffer.cc
+  security_buffer_descriptor.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): wa
+rning C4530: Se ha utilizado el controlador de excepciones de C++, pero la semá
+ntica de desenredo no está habilitada. Especifique /EHsc (..\lib\win32\wrappers
+\security_buffer_descriptor.cc) [C:\Users\pablo_000\Documents\P\Data Science\__
+__Proyecto\node\001_node_test\node_modules\monk\node_modules\mongodb\node_modul
+es\kerberos\build\kerberos.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): wa
+rning C4530: Se ha utilizado el controlador de excepciones de C++, pero la semá
+ntica de desenredo no está habilitada. Especifique /EHsc (..\lib\win32\wrappers
+\security_buffer.cc) [C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\
+node\001_node_test\node_modules\monk\node_modules\mongodb\node_modules\kerberos
+\build\kerberos.vcxproj]
+  security_context.cc
+  security_credentials.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): wa
+rning C4530: Se ha utilizado el controlador de excepciones de C++, pero la semá
+ntica de desenredo no está habilitada. Especifique /EHsc (..\lib\win32\wrappers
+\security_credentials.cc) [C:\Users\pablo_000\Documents\P\Data Science\____Proy
+ecto\node\001_node_test\node_modules\monk\node_modules\mongodb\node_modules\ker
+beros\build\kerberos.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): wa
+rning C4530: Se ha utilizado el controlador de excepciones de C++, pero la semá
+ntica de desenredo no está habilitada. Especifique /EHsc (..\lib\win32\wrappers
+\security_context.cc) [C:\Users\pablo_000\Documents\P\Data Science\____Proyecto
+\node\001_node_test\node_modules\monk\node_modules\mongodb\node_modules\kerbero
+s\build\kerberos.vcxproj]
+  base64.c
+  kerberos_sspi.c
+     Creando biblioteca C:\Users\pablo_000\Documents\P\Data Science\____Proyect
+  o\node\001_node_test\node_modules\monk\node_modules\mongodb\node_modules\kerb
+  eros\build\Release\kerberos.lib y objeto C:\Users\pablo_000\Documents\P\Data
+  Science\____Proyecto\node\001_node_test\node_modules\monk\node_modules\mongod
+  b\node_modules\kerberos\build\Release\kerberos.exp
+  Generando c¾digo
+  Generaci¾n de c¾digo finalizada
+  kerberos.vcxproj -> C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\
+  node\001_node_test\node_modules\monk\node_modules\mongodb\node_modules\kerber
+  os\build\Release\\kerberos.node
+
+> bson-ext@0.1.3 install C:\Users\pablo_000\Documents\P\Data Science\____Proyect
+o\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_modules
+\bson\node_modules\bson-ext
+> node-pre-gyp install --fallback-to-build
+
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_node_test\node
+_modules\mongodb\node_modules\mongodb-core\node_modules\bson\node_modules\bson-e
+xt>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_module
+s\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" clean )  el
+se (clean)
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_node_test\node
+_modules\mongodb\node_modules\mongodb-core\node_modules\bson\node_modules\bson-e
+xt>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_module
+s\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" configure -
+-fallback-to-build "--module=C:\Users\pablo_000\Documents\P\Data Science\____Pro
+yecto\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_mod
+ules\bson\node_modules\bson-ext\build\Release\bson.node" --module_name=bson "--m
+odule_path=C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_nod
+e_test\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson\node_mod
+ules\bson-ext\build\Release" )  else (configure --fallback-to-build "--module=C:
+\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_node_test\node_m
+odules\mongodb\node_modules\mongodb-core\node_modules\bson\node_modules\bson-ext
+\build\Release\bson.node" --module_name=bson "--module_path=C:\Users\pablo_000\D
+ocuments\P\Data Science\____Proyecto\node\001_node_test\node_modules\mongodb\nod
+e_modules\mongodb-core\node_modules\bson\node_modules\bson-ext\build\Release" )
+
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_node_test\node
+_modules\mongodb\node_modules\mongodb-core\node_modules\bson\node_modules\bson-e
+xt>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_module
+s\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" build --fal
+lback-to-build "--module=C:\Users\pablo_000\Documents\P\Data Science\____Proyect
+o\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_modules
+\bson\node_modules\bson-ext\build\Release\bson.node" --module_name=bson "--modul
+e_path=C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_node_te
+st\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson\node_modules
+\bson-ext\build\Release" )  else (build --fallback-to-build "--module=C:\Users\p
+ablo_000\Documents\P\Data Science\____Proyecto\node\001_node_test\node_modules\m
+ongodb\node_modules\mongodb-core\node_modules\bson\node_modules\bson-ext\build\R
+elease\bson.node" --module_name=bson "--module_path=C:\Users\pablo_000\Documents
+\P\Data Science\____Proyecto\node\001_node_test\node_modules\mongodb\node_module
+s\mongodb-core\node_modules\bson\node_modules\bson-ext\build\Release" )
+Los proyectos de esta solución se van a compilar de uno en uno. Para habilitar l
+a compilación en paralelo, agregue el modificador "/m".
+  bson.cc
+..\ext\bson.cc(922): warning C4267: 'argumento' : conversión de 'size_t' a 'uin
+t32_t'; posible pérdida de datos [C:\Users\pablo_000\Documents\P\Data Science\_
+___Proyecto\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\n
+ode_modules\bson\node_modules\bson-ext\build\bson.vcxproj]
+c:\users\pablo_000\documents\p\data science\____proyecto\node\001_node_test\nod
+e_modules\mongodb\node_modules\mongodb-core\node_modules\bson\node_modules\bson
+-ext\node_modules\nan\nan_new.h(209): warning C4244: 'argumento' : conversión d
+e 'int64_t' a 'double'; posible pérdida de datos [C:\Users\pablo_000\Documents\
+P\Data Science\____Proyecto\node\001_node_test\node_modules\mongodb\node_module
+s\mongodb-core\node_modules\bson\node_modules\bson-ext\build\bson.vcxproj]
+          ..\ext\bson.cc(589) : vea la referencia a la creación de instancias d
+  e plantilla de función 'v8::Local<v8::Number> NanNew<v8::Number,int64_t>(A0)'
+   que se está compilando
+          with
+          [
+              A0=int64_t
+          ]
+..\ext\bson.cc(342): warning C4267: 'inicializando' : conversión de 'size_t' a
+'uint32_t'; posible pérdida de datos [C:\Users\pablo_000\Documents\P\Data Scien
+ce\____Proyecto\node\001_node_test\node_modules\mongodb\node_modules\mongodb-co
+re\node_modules\bson\node_modules\bson-ext\build\bson.vcxproj]
+          ..\ext\bson.cc(153) : durante la compilación de la función miembro de
+   plantilla de clase 'void BSONSerializer<CountStream>::SerializeValue(void *,
+  const v8::Handle<v8::Value>)'
+          ..\ext\bson.cc(123) : vea la referencia a la creación de instancias d
+  e plantilla de función 'void BSONSerializer<CountStream>::SerializeValue(void
+   *,const v8::Handle<v8::Value>)' que se está compilando
+          ..\ext\bson.cc(103) : durante la compilación de la función miembro de
+   plantilla de clase 'void BSONSerializer<CountStream>::SerializeDocument(cons
+  t v8::Handle<v8::Value> &)'
+          ..\ext\bson.cc(899) : vea la referencia a la creación de instancias d
+  e plantilla de función 'void BSONSerializer<CountStream>::SerializeDocument(c
+  onst v8::Handle<v8::Value> &)' que se está compilando
+          ..\ext\bson.cc(898) : vea la referencia a la creación de instancias d
+  e plantilla de clase 'BSONSerializer<CountStream>' que se está compilando
+     Creando biblioteca C:\Users\pablo_000\Documents\P\Data Science\____Proyect
+  o\node\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_modu
+  les\bson\node_modules\bson-ext\build\Release\bson.lib y objeto C:\Users\pablo
+  _000\Documents\P\Data Science\____Proyecto\node\001_node_test\node_modules\mo
+  ngodb\node_modules\mongodb-core\node_modules\bson\node_modules\bson-ext\build
+  \Release\bson.exp
+  Generando c¾digo
+  Generaci¾n de c¾digo finalizada
+  bson.vcxproj -> C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node
+  \001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_modules\bs
+  on\node_modules\bson-ext\build\Release\\bson.node
+
+> bson@0.3.1 install C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\no
+de\001_node_test\node_modules\mongodb\node_modules\mongodb-core\node_modules\bso
+n
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+
+
+C:\Users\pablo_000\Documents\P\Data Science\____Proyecto\node\001_node_test\node
+_modules\mongodb\node_modules\mongodb-core\node_modules\bson>if not defined npm_
+config_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin
+\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (rebuild)
+debug@2.1.3 node_modules\debug
+└── ms@0.7.0
+
+cookie-parser@1.3.4 node_modules\cookie-parser
+├── cookie@0.1.2
+└── cookie-signature@1.0.6
+
+serve-favicon@2.2.0 node_modules\serve-favicon
+├── fresh@0.2.4
+├── ms@0.7.0
+├── parseurl@1.3.0
+└── etag@1.5.1 (crc@3.2.1)
+
+morgan@1.5.2 node_modules\morgan
+├── basic-auth@1.0.0
+├── depd@1.0.1
+└── on-finished@2.2.1 (ee-first@1.1.0)
+
+express@4.12.3 node_modules\express
+├── merge-descriptors@1.0.0
+├── utils-merge@1.0.0
+├── cookie-signature@1.0.6
+├── cookie@0.1.2
+├── fresh@0.2.4
+├── methods@1.1.1
+├── escape-html@1.0.1
+├── range-parser@1.0.2
+├── content-type@1.0.1
+├── vary@1.0.0
+├── finalhandler@0.3.4
+├── parseurl@1.3.0
+├── serve-static@1.9.2
+├── content-disposition@0.5.0
+├── path-to-regexp@0.1.3
+├── depd@1.0.1
+├── on-finished@2.2.1 (ee-first@1.1.0)
+├── qs@2.4.1
+├── etag@1.5.1 (crc@3.2.1)
+├── proxy-addr@1.0.7 (forwarded@0.1.0, ipaddr.js@0.1.9)
+├── send@0.12.2 (destroy@1.0.3, ms@0.7.0, mime@1.3.4)
+├── accepts@1.2.5 (negotiator@0.5.1, mime-types@2.0.10)
+└── type-is@1.6.1 (media-typer@0.3.0, mime-types@2.0.10)
+
+body-parser@1.12.3 node_modules\body-parser
+├── content-type@1.0.1
+├── raw-body@1.3.4
+├── bytes@1.0.0
+├── depd@1.0.1
+├── on-finished@2.2.1 (ee-first@1.1.0)
+├── qs@2.4.1
+├── type-is@1.6.1 (media-typer@0.3.0, mime-types@2.0.10)
+└── iconv-lite@0.4.8
+
+jade@1.9.2 node_modules\jade
+├── character-parser@1.2.1
+├── void-elements@2.0.1
+├── commander@2.6.0
+├── mkdirp@0.5.0 (minimist@0.0.8)
+├── with@4.0.3 (acorn-globals@1.0.4, acorn@1.0.3)
+├── constantinople@3.0.1 (acorn-globals@1.0.4)
+└── transformers@2.1.0 (promise@2.0.0, css@1.0.8, uglify-js@2.2.5)
+
+monk@1.0.1 node_modules\monk
+├── mpromise@0.5.1
+├── mongodb@1.4.35 (readable-stream@1.0.33, bson@0.2.21, kerberos@0.0.9)
+└── mongoskin@1.4.13
+
+mongodb@2.0.28 node_modules\mongodb
+├── readable-stream@1.0.31 (inherits@2.0.1, string_decoder@0.10.31, isarray@0.0.
+1, core-util-is@1.0.1)
+└── mongodb-core@1.1.25 (kerberos@0.0.10, bson@0.3.1)
+
+
