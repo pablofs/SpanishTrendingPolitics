@@ -17,6 +17,14 @@ router.get('/documentlist', function(req, res) {
     res.render('documentlist')
 });
 
+router.get('/document_visualizer', function(req, res) {
+    res.render('document_visualizer')
+});
+
+router.get('/my_bubble_chart', function(req, res) {
+    res.render('my_bubble_chart')
+});
+
 router.get('/concept-map', function(req, res) {
     res.render('concept-map')
 });
@@ -29,6 +37,21 @@ router.get('/radar', function(req, res) {
     res.render('radar')
 });
 
+router.get('/the_words_they_used', function(req, res) {
+    res.render('the_words_they_used')
+});
+
+router.get('/the_words_they_used2', function(req, res) {
+    res.render('the_words_they_used2')
+});
+
+router.get('/politilines', function(req, res) {
+    res.render('politilines')
+});
+
+router.get('/politilines2', function(req, res) {
+    res.render('politilines2')
+});
 
 ///////////////////////////////////////////////////////////////////////////////
 

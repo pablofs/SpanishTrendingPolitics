@@ -6,7 +6,32 @@ block content
                 
     // Wrapper
     #wrapper
-
+    
+        // ADD USER
+        h2 Get Document By  Date
+        #getDocByDate
+            fieldset
+                input#inputDate(type='date', placeholder='Document Date')
+                br
+                button#btnGetDocByDate Get Document
+        // /ADD USER
+        
+        br
+        br
+        br
+        
+        // Document list
+        #documentbydate
+            table
+                thead
+                    th URL
+                    th Date
+                    th Description
+                tbody
+        // /USER LIST
+        br
+        br
+        br
         // Document list
         #documentlist
             table
@@ -15,6 +40,6 @@ block content
                     th Date
                     th Description
                 tbody
-        // /USER LIST
+        // /USER LIST       
 
     // /WRAPPER

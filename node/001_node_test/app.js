@@ -30,6 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 ///////////////////////////////////////////////////////////////////////////////
 // PFS: New development
+
+// app.listen(process.env.PORT || 4000);
+
 // Make our db accessible to our router
 app.use(function(req,res,next){
     req.db = db;
@@ -38,7 +41,12 @@ app.use(function(req,res,next){
 
 // Para el ejemplo de Radar
 app.use(express.static(path.join(__dirname, 'public/javascripts/radar')));
-// app.use(express.static(path.join(__dirname, 'public/stylesheets/radar')));
+// Para el ejemplo de Politilines
+app.use(express.static(path.join(__dirname, 'public/javascripts/politilines')));
+app.use(express.static(path.join(__dirname, 'public/data/politilines')));
+// Para el ejemplo de document_visualizer
+app.use(express.static(path.join(__dirname, 'public/javascripts/document_visualizer')));
+app.use(express.static(path.join(__dirname, 'public/data/document_visualizer')));
 ///////////////////////////////////////////////////////////////////////////////
 
 app.use('/', routes);

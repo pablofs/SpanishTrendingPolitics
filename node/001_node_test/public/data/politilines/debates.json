@@ -1,0 +1,203 @@
+ {
+ 
+	 "debateCategories": [	 	 	
+	 	{
+	 		"name":"Presidential",
+	 		"listCollapse": false,
+		 
+			"debates":[
+				{
+			 		"url":"debate_102212.json",
+			 		"city" : "Boca Raton",
+			  		"date" : "2012-10-22",
+			  		"sponsors" : "Commission on Presidential Debates",
+			  		"venue" : "Lynn University"
+			  	},
+			  	{
+			 		"url":"debate_101612.json",
+			 		"city" : "Hempstead, New York",
+			  		"date" : "2012-10-16",
+			  		"sponsors" : "Commission on Presidential Debates",
+			  		"venue" : "Hofstra University"
+			  	},
+			  	{
+			 		"url":"debate_100312.json",
+			 		"city" : "Denver, Colorado",
+			  		"date" : "2012-10-03",
+			  		"sponsors" : "Commission on Presidential Debates",
+			  		"venue" : "University of Denver"
+			  	}
+			]
+		},
+		
+		{
+	 		"name":"Vice-Presidential",
+	 		"listCollapse": false,
+		 
+			"debates":[
+				{
+			 		"url":"debate_101112.json",
+			 		"city" : "Danville, Kentucky",
+			  		"date" : "2012-10-11",
+			  		"sponsors" : "Commission on Presidential Debates",
+			  		"venue" : "Centre College"
+			  	}
+			]
+		},
+		
+	 	{
+	 		"name":"Republican Primary",
+	 		"listCollapse": true,
+		 
+			"debates":[
+			   	{
+			 		"url":"debate_022212.json",
+			 		"city" : "Mesa, Arizona",
+			  		"date" : "2012-02-22",
+			  		"sponsors" : "CNN,the Republican Party of Arizona ",
+			  		"venue" : "Mesa Arts Center"
+			  	},
+			 
+			  	{
+			 		"url":"debate_012612.json",
+			 		"city" : "Jacksonville, Florida",
+			  		"date" : "2012-01-26",
+			  		"sponsors" : "CNN,CNN en Español,The Hispanic Leadership Network,The Republican Party of Florida",
+			  		"venue" : "University of North Florida"
+			  	},
+			
+			 	{
+			 		"url":"debate_012312.json",
+			 		"city" : "Tampa, Florida",
+			  		"date" : "2012-01-23",
+			  		"sponsors" : "The Tampa Bay Times,NBC News,the National Journal,the Florida Council of 100 ",
+			  		"venue" : "University of South Florida"
+			  	}, 	
+			
+			    {
+			 		"url":"debate_011912.json",
+			 		"city" : "Charleston, South Carolina",
+			  		"date" : "2012-01-19",
+			  		"sponsors" : "CNN / Southern Republican Leadership Conf.",
+			  		"venue" : ""
+			  	}, 	
+			 	{
+			 		"url":"debate_011612.json",
+			 		"city" : "Myrtle Beach, South Carolina",
+			  		"date" : "2012-01-16",
+			  		"sponsors" : "Fox News,Republican Party of South Carolina",
+			  		"venue" : "Myrtle Beach Convention Center"
+			  	},
+			
+			 	{
+			 		"url":"debate_010812.json",
+			 		"city" : "Concord, New Hampshire",
+			  		"date" : "2012-01-08",
+			  		"sponsors" : "NBC News,Facebook,the Union Leader",
+			  		"venue" : "Capitol Center for the Arts"
+			  	},
+				
+			 	{
+			 		"url":"debate_010712.json",
+			 		"city" : "Manchester, New Hampshire",
+			  		"date" : "2012-01-07",
+			  		"sponsors" : "ABC News,WMUR",
+			  		"venue" : "Saint Anselm College"
+			  	},
+				
+			 	{
+			 		"url":"",
+			 		"city" : "Des Moines, Iowa",
+			  		"date" : "2011-12-27",
+			  		"sponsors" : "Newsmax,Ion Televison",
+			  		"venue" : ""
+			  	},
+			 	
+			 	{
+			 		"url":"debate_121511.json",
+			 		"city" : "Sioux City, Iowa",
+			  		"date" : "2011-12-15",
+			  		"sponsors" : "Fox News,Republican Party of Iowa",
+			  		"venue" : "Sioux City Convention Center"
+			  	}, 
+			  	
+			  	{
+			 		"url":"debate_121011.json",
+			 		"city" : "Des Moines, Iowa",
+			  		"date" : "2011-12-10",
+			  		"sponsors" : "ABC News,ABC5/WOI-DT,the Des Moines Register,Republican Party of Iowa",
+			  		"venue" : "Drake University"
+			  	}, 
+			  	
+			 	{
+			 		"url":"debate_112211.json",
+			 		"city" : "Washington, DC",
+			  		"date" : "2011-11-22",
+			  		"sponsors" : "CNN,The Heritage Foundation,the American Enterprise Institute",
+			  		"venue" : "DAR Constitution Hall"
+			  	}, 
+			 
+			  	
+			 	{
+			 		"url":"debate_110911.json",
+			 		"city" : "Rochester, Michigan",
+			  		"date" : "2011-11-09",
+			  		"sponsors" : "CNBC,the Michigan Republican Party,Oakland University",
+			  		"venue" : "Oakland University"
+			  	}, 
+			 
+			
+			 	{
+			 		"url":"debate_101811.json",
+			 		"city" : "Las Vegas, Nevada",
+			  		"date" : "2011-10-18",
+			  		"sponsors" : "CNN,the Western Republican Leadership Conference",
+			  		"venue" : "Sands Expo Convention Center"
+			  	},
+			   
+			  	{
+			 		"url":"debate_101111.json",
+			 		"city" : "Hanover, New Hampshire",
+			  		"date" : "2011-10-11",
+			  		"sponsors" : "Bloomberg,The Washington Post,WBIN-TV",
+			  		"venue" : "Dartmouth College"
+			  	},
+			  	{
+			 		"url":"debate_092211.json",
+			 		"city" : "Orlando, Florida",
+			  		"date" : "2011-09-22",
+			  		"sponsors" : "Fox News,Google,Florida Republican Party",
+			  		"venue" : "The Orange County Convention Center"
+			  	},
+			    {
+			 		"url":"debate_091211.json",
+			 		"city" : "Tampa, Florida",
+			  		"date" : "2011-09-12",
+			  		"sponsors" : "CNN,the Tea Party Express",
+			  		"venue" : "Florida State Fair Grounds"
+			  	},
+			    {
+			 		"url":"debate_090711.json",
+			 		"city" : "Simi Valley, California",
+			  		"date" : "2011-09-07",
+			  		"sponsors" : "Reagan Library,NBC News,Politico",
+			  		"venue" : "Reagan Library"
+			  	},
+			    {
+			 		"url":"debate_081111.json",
+			 		"city" : "Ames, Iowa",
+			  		"date" : "2011-08-11",
+			  		"sponsors" : "Fox News,The Washington Examiner,the Republican Party of Iowa",
+			  		"venue" : "Iowa State University"
+			  	},
+			    {
+			 		"url":"debate_061311.json",
+			 		"city" : "Manchester, New Hampshire",
+			  		"date" : "2011-06-13",
+			  		"sponsors" : "CNN,WMUR-TV,New Hampshire Union Leader",
+			  		"venue" : "Saint Anselm College"
+			  	}
+			]
+		}	 
+	 ] 
+ }

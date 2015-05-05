@@ -1,0 +1,92 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    // force IE9 to not use compatability mode
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    // Facebook share metadata
+    meta(name='title', content='PolitiLines')
+    meta(name='description', content='Politilines.com: a new tool that lets you explore the words used in the Presidential debates and connect the issues to the candidates.')
+    link(rel='image_src', href='images/politilines/logo.png')
+    meta(name='robots', content='all')
+    title Politilines
+    // view size on mobile devices
+    // <meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+    // font embedding
+    link(href='http://fonts.googleapis.com/css?family=Cabin:400,500,700|Podkova', rel='stylesheet', type='text/css')
+    // styles old browsers / modern browsers
+    //if lte IE 8
+      link(rel='stylesheet', href='css/ie8.css', type='text/css', charset='utf-8')
+    // [if gt IE 8] <!
+    link(rel='stylesheet', href='stylesheets/politilines2/main.css', type='text/css', charset='utf-8')
+    // <![endif]
+    link(rel='stylesheet', href='stylesheets/politilines2/jquery.jscrollpane.css', type='text/css', charset='utf-8')
+    link(rel='stylesheet', href='stylesheets/politilines2/scrollpane.css', type='text/css', charset='utf-8')
+    //if lte IE 8
+      script(type='text/javascript').
+        var is_lte_IE8 = true;
+      |         ––>
+      //if IE 7
+        script(type='text/javascript').
+          //ultimately redirect to upgrade page or fix display issues with IE7
+          //window.location = 'upgrade.html';
+          <script>
+    script(type='text/javascript').
+      if(is_lte_IE8!=true)
+      var is_lte_IE8=false;
+  body
+    #wrapper
+      #stage
+        a(href='http://politilines.periscopic.com/') Connecting the issues to the candidates
+        br
+        br
+        br
+    
+        img#logo(src='images/politilines/logo.png')
+        #describe
+          | Visualizing the words used in the
+          br
+          span#describe_scope
+            | 2011-2012 
+            strong Presidential Debates
+        #categories
+          span#cat_one Top Issues
+          span#cat_two TOP WORDS
+          span#cat_three CANDIDATES
+        #waist
+          #debates
+            #sidehead Explore by Debate
+            #event_info
+            #sideheadSub Debates
+            #side_menus
+          #viz
+            #vector_layer.shell
+            #text_shell.shell
+              #text_layer
+    #footer
+      #footer_block
+        #footer_credit
+          a(href='http://periscopic.com')
+            | A public service provided by 
+            span#periLogo Periscopic
+          a#sources(style='cursor:pointer') Method & sources
+          |  • 
+          a#feedback Send feedback
+          script(type='text/javascript').
+            //make crawling mailto a bit harder for spammers!
+            var a = document.getElementById("feedback");
+            a.href = (true?"mailto:":"@")+(true?"emerge":"@")+(true?"@":"@")+(true?"periscopic":"@")+(true?".com":"@")+(true?"?subject=Politilines feedback":"@");
+        #footer_tag
+          a#tagline(href='http://periscopic.com', target='_blank') periscopic.com : do good with data
+        #footer_separator
+        #footer_facebook
+          a(href='http://www.facebook.com/sharer.php?u=http://politilines.com&t=PolitiLines', target='_blank')
+            img(src='images/politilines/facebook.png')
+        #footer_twitter
+          a(href='http://twitter.com/home?status=Politilines.com: a new tool that lets you explore the words used in the Presidential debates and connect the issues to the candidates.', target='_blank')
+            img(src='images/politilines/twitter.png')
+        #embedThis
+          | | embed this  
+          code
+            | &lt;iframe src=&quot;http://politilines.com&quot; width=&quot;940&quot; height=&quot;1050&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;
+    script(src='javascripts/politilines2/PolitiLines.js?101212')
