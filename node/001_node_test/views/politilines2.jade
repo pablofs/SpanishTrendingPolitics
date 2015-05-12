@@ -37,10 +37,6 @@ html
   body
     #wrapper
       #stage
-        a(href='http://politilines.periscopic.com/') Connecting the issues to the candidates
-        br
-        br
-        br
     
         img#logo(src='images/politilines/logo.png')
         #describe
@@ -63,30 +59,5 @@ html
             #vector_layer.shell
             #text_shell.shell
               #text_layer
-    #footer
-      #footer_block
-        #footer_credit
-          a(href='http://periscopic.com')
-            | A public service provided by 
-            span#periLogo Periscopic
-          a#sources(style='cursor:pointer') Method & sources
-          |  • 
-          a#feedback Send feedback
-          script(type='text/javascript').
-            //make crawling mailto a bit harder for spammers!
-            var a = document.getElementById("feedback");
-            a.href = (true?"mailto:":"@")+(true?"emerge":"@")+(true?"@":"@")+(true?"periscopic":"@")+(true?".com":"@")+(true?"?subject=Politilines feedback":"@");
-        #footer_tag
-          a#tagline(href='http://periscopic.com', target='_blank') periscopic.com : do good with data
-        #footer_separator
-        #footer_facebook
-          a(href='http://www.facebook.com/sharer.php?u=http://politilines.com&t=PolitiLines', target='_blank')
-            img(src='images/politilines/facebook.png')
-        #footer_twitter
-          a(href='http://twitter.com/home?status=Politilines.com: a new tool that lets you explore the words used in the Presidential debates and connect the issues to the candidates.', target='_blank')
-            img(src='images/politilines/twitter.png')
-        #embedThis
-          | | embed this  
-          code
-            | &lt;iframe src=&quot;http://politilines.com&quot; width=&quot;940&quot; height=&quot;1050&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;
+
     script(src='javascripts/politilines2/PolitiLines.js?101212')

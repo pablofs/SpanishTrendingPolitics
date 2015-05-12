@@ -16,7 +16,6 @@ router.post('/documentbydate', function(req, res) {
     var db = req.db;
 	var date = req.body.date;
 	console.log(date);
-	console.log(new Date(date));
     db.collection('document').find({"date" : new Date(date)}).toArray(function (err, items) {
 		// console.log(items);
         return res.json(items);

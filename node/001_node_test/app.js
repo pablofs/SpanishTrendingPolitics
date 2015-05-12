@@ -44,6 +44,9 @@ app.use(express.static(path.join(__dirname, 'public/javascripts/radar')));
 // Para el ejemplo de Politilines
 app.use(express.static(path.join(__dirname, 'public/javascripts/politilines')));
 app.use(express.static(path.join(__dirname, 'public/data/politilines')));
+// Para el ejemplo de Politilines2
+app.use(express.static(path.join(__dirname, 'public/javascripts/politilines2')));
+app.use(express.static(path.join(__dirname, 'public/data/politilines2')));
 // Para el ejemplo de document_visualizer
 app.use(express.static(path.join(__dirname, 'public/javascripts/document_visualizer')));
 app.use(express.static(path.join(__dirname, 'public/data/document_visualizer')));

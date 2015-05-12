@@ -1,0 +1,127 @@
+<style>
+    text {
+        font: sans-serif;
+    }
+</style>
+
+<div id="my_first_bubble_chart"></div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script type="text/javascript">
+ 
+    var diameter = 960,
+        format = d3.format(",d"),
+        // https://github.com/mbostock/d3/wiki/Ordinal-Scales#categorical-colors
+        color = d3.scale.category20c();
+        
+    var pie = d3.layout.pie()
+        .sort(null)
+        .value(function(d) { return d.population; });
+
+    var bubble = d3.layout.pack()
+        .sort(null)
+        .size([diameter, diameter])
+        .padding(1.5);
+
+    var svg = d3.select("#my_first_bubble_chart").append("svg")
+        .attr("width", diameter)
+        .attr("height", diameter)
+        .attr("class", "bubble");
+
+    d3.json("common_topic_list.json", function(data) {
+      var node = svg.selectAll(".node")
+          .data(bubble.nodes(processData(data))
+          .filter(function(d) { return !d.children; }))
+        .enter().append("g")
+          .attr("class", "node")
+          .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+      node.append("title")
+          .text(function(d) { 
+                  var result = d.className + ": (" + (100.*d.value).toFixed(2) + "%)";
+                  var sum = d.k1 + d.k2;
+                  if (d.k1 > 0) {
+                      result += "\nCongrés: (" + (100.*d.k1/sum).toFixed(2) + "%)";
+                  }
+                  if (d.k2 > 0) {
+                      result += "\nCIS: (" + (100.*d.k2/sum).toFixed(2) + "%)";
+                  }
+                  return result; 
+                });
+
+      node.append("circle")
+          .attr("r", function(d) { return d.r; })
+          .attr("stroke", function (d) { return "black" })
+          .attr("stroke-width", "1")
+          .style("fill", function(d) { return d.k2 > d.k1 ? "white" : "steelblue"; });
+
+      node.append("circle")
+          .attr("r", function(d) {
+                        var result = 0;
+                        if (d.k1 + d.k2 > 0.99) {
+                            if (d.k1>d.k2) {
+                                result = d.r * Math.sqrt(d.k2);
+                            }
+                            else {
+                                result = d.r * Math.sqrt(d.k1);
+                            }
+                        }
+                        return result; 
+                      })
+          .attr("stroke", function (d) { return "black" })
+          .attr("stroke-width", "1")
+          .style("fill", function(d) { return d.k2 > d.k1 ? "steelblue" : "white"; });
+    
+      node.append("text")
+          .attr("dy", ".3em")
+          .style("text-anchor", "middle")
+          .style("font-size", function(d) { return Math.round(d.r/4)+"px"; })
+          .text(function(d) { return d.className; })
+          //.call(wrap, function(d) { return Math.round(d.r/4); }, function(d) { return d.r / 2; });
+          .call(wrap, 10, 60);
+
+    });
+
+    function processData(data) { 
+
+        var newDataSet = [];
+        for (var i = 0; i < data.length; i++) { 
+            // k1 -> congres
+            // k2 -> CIS
+            newDataSet.push({packageName: "Topics", className: data[i][0], value: data[i][3], k1:data[i][1],k2:data[i][2]});
+        }
+        return {children: newDataSet};
+    }
+    
+    // Wrapping Long Labels
+    // http://bl.ocks.org/mbostock/7555321
+    function wrap(text, fontSize, width) {
+        text.each(function() {
+            var text = d3.select(this),
+                words = text.text().split(/\s+/).reverse(),
+                word,
+                line = [],
+                lineNumber = 0,
+                lineHeight = fontSize/20., // 1.1 // ems
+                y = text.attr("y"),
+                dy = parseFloat(text.attr("dy")),
+                tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+            while (word = words.pop()) {
+              line.push(word);
+              tspan.text(line.join(" "));
+              
+              // alert(tspan.node().getComputedTextLength()*fontSize + " > " + width)
+              
+              if (tspan.node().getComputedTextLength()*fontSize > width) {
+                line.pop();
+                tspan.text(line.join(" "));
+                line = [word];
+                tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+              }
+            }
+        });
+    }
+        
+    d3.select(self.frameElement).style("height", diameter + "px");
+</script>
